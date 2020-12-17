@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Accueil{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/leaflet.css')}}" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+            <link rel="stylesheet" href="{{ asset('css/MarkerCluster.css')}}">
+            <link rel="stylesheet" href="{{ asset('css/MarkerCluster.Default.css')}}">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+        {% endblock %}
+    </head>
+    <body>
+     <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray"><b><span class="text-blue">Perle</span></b> Rencontre</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Actualités</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Radar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Live</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <!-- <a href="#"><img src="images/salah.jpg" class="avatar" alt="Sary" width="30" height="15"></a> -->
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="notification">
+                    <span><i class="fas fa-bell"></i></span>
+                    <span class="badge">+5</span>
+                </a>
+                <!-- free fas fa-comment-alt -->
+                <a href="#" class="notification">
+                    <span><i class="fas fa-comments"></i></span>
+                    <span class="badge">+1</span>
+                </a>
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin navigation -->
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

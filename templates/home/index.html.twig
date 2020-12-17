@@ -1,0 +1,344 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <body>
+    <!-- bannière -->
+    <section class="banner">
+        <div class="button_banner">
+            <button class="button_cover mx-2"><i class="fas fa-image"></i> Changer de photo de couverture</button>
+            <button class="button_cover"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+    </section>
+    <!-- fin bannière -->
+
+    <!--Content-->
+    <section class="content">
+        <div class="content_profil">
+            <div class="card">
+                <!-- start card profil -->
+                <div class="card_my_profile">
+                    <span class="font-normal text-blue"><b>Mon profil</b></span><i class="fas fa-ghost" style="margin-left: 58%;color: #a7a9aa;" ></i>
+                    <label class="switch" style="float:right;">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <div class="img_profile">
+                        <img src="images/salah.jpg" alt="photo de profil" class="rounded_img" style="clear: right;" >
+                    </div>
+                    <br>
+                    <div class="status">
+                        <h3 class="text-center">Maka Maka</h3>
+                        <div class="status_profile">
+                            <i class="fas fa-circle" style="color:green;"></i>
+                        </div>
+                    </div>
+                    <h5 class="text-center font-normal">(Maka2158)</h5><br>
+                    <div align="center">
+                        <b>ID :</b> 12525145
+                    </div>
+                    <!-- 3 OPTIONS -->
+                    <div class="three_option">
+                        <div class="option_one">
+                            En ligne<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="option_two">
+                            LCS<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="option_three">
+                            LCWE<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end 3 OPTIONS -->
+                    <table class="table_profile">
+                        <thead>
+                            <tr>
+                                <th>Age</th>
+                                <th>Sexe</th>
+                                <th>Ville</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>28 ans</td>
+                                <td>Homme</td>
+                                <td>Nantes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div align="center">
+                        <button class="modif_profil"><i class="fas fa-edit"></i> Modifier mon profil</button>
+                    </div>
+                </div>
+                <!-- end card profil -->
+                <!-- start card coffre -->
+                <div class="card_coffre">
+                    <div class="card_coffre_header">
+                        <h4 class="font-normal text-blue"><b>Mon coffre</b></h4>
+                    </div>
+                    <div class="card_coffre_content" align="center">
+                        <div>
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                        <div class="count_peries">
+                            <h2 class="text-blue">1021</h2>
+                            <span>Perles</span>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <b><h5 style="float: left;"> Date de renouvellement: </h5> <h5> 05/08/2020 </h5></b> <br><br>
+                        <h5 style="margin-top: 2%; color: #b1acac">RACHAT DE PERLE</h5> 
+                        <div class="price_coffre">
+                            <div class="count_peries">
+                                <h2 class="text-blue">100</h2>
+                                <b><h6>/5£</h6></b>
+                            </div>
+                        </div>
+                        <div class="price_coffre">
+                            <div class="count_peries">
+                                <h2 class="text-blue">250</h2>
+                                <b><h6>/10£</h6></b>
+                            </div>
+                        </div>
+                        <br><button class="coffre_commander" style="margin-top: 3%;">Commander</button><br>
+                    </div>
+                </div>
+                <!-- end card coffre -->
+                <!-- Start card Matching -->
+                <div class="card_matching">
+                    <div class="card_matching_header">
+                        <h4 class="font-normal text-blue"><b>Matching</b><span class="close" style="color:#000;"><i class="fas fa-times"></i></span></h4>
+                        <div class="count_peries" >
+                            <h1 class="text-blue text-center" style="margin-top: 6%;">60%</h1>
+                        </div>
+                    </div>
+                    <div class="card_matching_body">
+                        <div id="progressBar">
+                            <div id="bar">.</div>
+                        </div><br>
+                        <img class="card_indentity_image" src="images/fille.jfif" alt="" width="100" height="200">
+                        <div class="card_indentity_body">
+                            <div class="info_1">
+                                <b style="margin-left: 6px;">Marie Claire</b><b style="margin-left: 124px;color: #9c9c9c">18 ans</b><br>
+                                <span style="margin-left: 6px;">Saint-Tropez</span><b style="margin-left: 124px;">A 800 m</b><br>                                
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <!-- End card Matching -->
+            </div>
+        </div>
+        <!-- start card detail -->
+        <div class="content_detail">
+            <!-- box rencard -->
+            <div class="rencard_detail">
+                <div class="envie_icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="envie_texte">
+                    <h4>Envie du jour</h4>
+                    <p>J'ai envie de boire un coup ce soir vers 20h.</p>
+                </div>
+                <div class="envie_edit">
+                    <span class="close bg-gray"><i class="fas fa-edit"></i></span>
+                </div>
+            </div>
+            <!-- <div class="rencard_detail">
+                <div class="envie">
+                    <div class="align_envie">
+                        <h4>Envie du jour<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4><br>
+                        J'ai envie de boire un coup ce soir vers 20h.
+                    </div>
+                    <div  class="align_envie">
+                        <i class="fas fa-edit icon_edit_envie"></i>
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div> -->
+            <!-- box rencard -->
+
+
+
+            <!-- box description -->
+            <div class="propos">
+                <div class="card_description">
+                    <br><h4>Description<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4><br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum architecto iure. Minima tenetur facilis, voluptate voluptatum accusantium repudiandae laborum beatae minus cum corporis voluptas dicta in eos veritatis facere?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum obcaecati velit! Dignissimos, quis expedita. Provident dolor quo accusantium? Consequuntur deserunt in harum velit est aliquid ab ut blanditiis nobis.
+                    </p>
+                </div>
+                <div class="card_quel_coin">
+                    <br><h4>Dans quel coin ?<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4><br>
+                    <div class="info_coin">
+                        <div class="addresse_coin">
+                            <div><h4 class="text_gray">Ville</h4><br>Paris</div><br>
+                            <div><h4 class="text_gray">Département</h4><br>Paris</div><br>
+                            <div><h4 class="text_gray">Région</h4><br>Hautes-Alpes</div><br>
+                            <div><h4 class="text_gray">Pays</h4><br>France</div><br>
+                        </div>
+                        <div class="geolocation_coin">
+                            <button class="modif_profil"> Géolocalisation</button>
+                                <div id="maCarte" width="400" height="300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box description -->
+                    <!-- box map -->
+                    <div id="mapid"></div>
+                    <!-- box map -->
+
+                <!-- box Mes secrets -->
+                <div class="card_mon_physique">
+                    <br><h4>Mon physique<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4><br>
+                    <div class="item_mon_physique"><h4>Age</h4><br>32 ans</div>
+                    <div class="item_mon_physique"><h4>Séxualité</h4><br>Femme</div>
+                    <div class="item_mon_physique"><h4>Longueurs des cheveux</h4><br>Court</div>
+                    <div class="item_mon_physique"><h4>Taille</h4><br>1m75</div>
+                    <div class="item_mon_physique"><h4>Couleur de cheveux</h4><br>Marron claire</div>
+                    <div class="item_mon_physique"><h4>Couleur des yeux</h4><br>Marron</div>
+                    <div class="item_mon_physique"><h4>Poids</h4><br>58kg</div>
+                    <div class="item_mon_physique"><h4>Style de cheuveux</h4><br>Laché</div>
+                    <div class="item_mon_physique"><h4>Sylouhette</h4><br>Mince</div>
+                </div>
+
+                <!-- box mon physique -->
+
+                <!-- box Mes secrets -->
+                <div class="card_mes_secrets">
+                    <h4>Mes secrets<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4>
+                    <div class="item_mes_secret"><h4>Je craque pour</h4><br>Dentelles</div>
+                    <div class="item_mes_secret"><h4>J'aime porter</h4><br>du bleu</div><br>
+                    <div class="item_mes_secret"><h4>Je frissonne pour</h4><br>Les yeux cachés</div>
+                    <div class="item_mes_secret"><h4>Sous la couette</h4><br>Caleçons</div>
+                    
+                </div>
+
+                <!-- box Mes secrets -->
+                <!-- box ma style de vie -->
+                <div class="card_ma_style_de_vie">
+                    <h4>Style de vie<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4>
+                    <div class="item_ma_style_de_vie"><h4>Passe temps</h4><br>Natation</div>
+                    <div class="item_ma_style_de_vie"><h4>Dégaine</h4><br>Bio</div>
+                    <div class="item_ma_style_de_vie"><h4>Sport</h4><br>Basket</div>
+                    <div class="item_ma_style_de_vie"><h4>Tabac</h4><br>sans</div>
+                    <div class="item_ma_style_de_vie"><h4>Sous la pluie</h4><br>Nu</div>
+                    <div class="item_ma_style_de_vie"><h4>Alimentation</h4><br>équilibré</div>
+                    <div class="item_ma_style_de_vie"><h4>Hobbies</h4><br>Foot</div>
+                    <div class="item_ma_style_de_vie"><h4>Alcool</h4><br>Sans</div>
+                    <div class="item_ma_style_de_vie"><h4>En famille</h4><br>Bien</div>
+                    <div class="item_ma_style_de_vie"><h4>J'aime manger</h4><br>Poulet</div>
+                    <div class="item_ma_style_de_vie"><h4>Gout musicaux</h4><br>Jazz</div>
+                </div>
+                <!-- box ma style de vie -->
+                <!-- box mais encore -->
+                <div class="card_mais_encore">
+                    <h4>Mais encore<span class="close bg-gray"><i class="fas fa-edit"></i></span></h4>
+                    <div class="item_mais_encore"><h4>Langues parlées</h4><br><span class='item_encore' >Anglais</span></div>
+                    <div class="item_mais_encore"><h4>Professions</h4><br><span class='item_encore' >Musicien</span></div>
+                    <div class="item_mais_encore"><h4>Personnalité</h4><br><span class='item_encore' >Taquine</span></div>
+                    <div class="item_mais_encore"><h4>Origines</h4><br><span class='item_encore' >Asiatique</span></div>
+                    <div class="item_mais_encore"><h4>Scolarité et études</h4><br><span class='item_encore' >DUT</span></div>
+                    <div class="item_mais_encore"><h4>Enfants</h4><br><span class='item_encore' >sans</span></div>
+                    <div class="item_mais_encore"><h4>Signes astrologique</h4><br><span class='item_encore' >Belier</span></div>
+                </div>
+                <!-- box mais encore -->
+            </div>
+        </div>
+        <!-- end card detail --> 
+        <!-- start card video -->
+        <div class="content_video">
+            <div class="carda">
+                <div class="card_coffre_header">
+                    <h4 class="font-normal text-blue"><b>Mes video</b></h4>
+                </div>
+                
+                <div class="card_video_content">
+                    <img class="row" src="images/VideoIcon.png" >
+                    <img class="row" src="images/VideoIcon.png" >
+                    <img class="row" src="images/VideoIcon.png" >
+                    <img class="row" src="images/VideoIcon.png" >
+                </div> 
+            </div>
+                <div class="carda">
+                <div class="card_Vocales">
+                    <h4 class="card_Vocales_header text-blue"><b>Descriptions Vocales</b><span class="close gray"><i class="fas fa-plus"></i></span></h4>
+                </div>
+                <div class="card_Vocales_content">
+                    <i class="fas fa-play" style="margin-left: 15px;"></i>
+                    <img class="audio" src="images/image4.jpg">
+                    <i class="fas fa-play" style="margin-left: 15px;"></i>
+                    <img class="audio" src="images/image4.jpg">
+                </div>  
+            </div>
+                <div class="carda">
+                <div class="card_photos">
+                    <h4 class="card_photos_header text-blue"><b>Mes photos</b><span class="close gray"><i class="fas fa-plus"></i></span></h4>
+                </div>
+                <div class="card_photos_content">
+                    <img class="photo" src="images/salah.jpg">
+                    <img class="photos" src="images/couver.png">
+                    <img class="photos" src="images/couvertu.png">
+                    <img class="photo" src="images/salahh.jpg">
+                </div>
+                </div>
+                <div class="carda">
+                <div class="card_amis">
+                    <h4 class="card_amis_header text-blue"><b>Mes amis</b><span class="close gray"><i class="fas fa-search"></i></span></h4>
+                </div><br>
+                <div class="card_amis_content">
+                    <div class="onligne">
+                        <img alt="Avatar" class="avatar" src="images/sala.png"><span class="name">Annais Devia</span><i class="fas fa-comments"></i>
+                        <i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;"></i>
+                    </div>
+                    <br>
+                    <div class="onligne">
+                        <img alt="Avatar" class="avatar" src="images/sal.png"><span class="name">Jean Marc Antoine</span><i class="fas fa-comments"></i>
+                        <i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;"></i>
+                    </div>
+                </div>
+                </div>
+
+                <div>
+                    <div class="carda">
+                    <div class="card_videos_membres">
+                        <h4 class="card_vm_header text-blue"><b>Les vidéos des membres</b></h4>
+                        <img class="card_vidéo_membre" src="images/salahh.jpg" alt="vidéo membre">
+                        <div class="card_indentity_body">
+                            <div class="info_1">
+                                <b>Eleanor Pena</b><span style="float: right;"> 18 ans </span><br>
+                                Saint-Tropez A 800 m<br>
+                                <span class="">Annais Devia</span><i class="fas fa-eye"></i>245
+                            </div>
+                            <div class="info_2">
+                                <b>18 ans</b><br>
+                                A 800 m
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <!-- end card video -->
+    </section>
+    <!--Fin Content-->
+    </body>
+    {{ include("partials/footer.html.twig") }}
+{% endblock %}
